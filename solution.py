@@ -58,7 +58,7 @@ def naked_twins(values):
                     for digit in values[peer]:
                         if (digit == naked_twins[0]) or (digit == naked_twins[1]):
                             values[peer] = values[peer].replace(digit,'')
-        return values
+    return values
 
 def grid_values(grid):
     """
@@ -92,7 +92,7 @@ def display(values):
         print(''.join(values[r+c].center(width)+('|' if c in '36' else '')
                       for c in cols))
         if r in 'CF': print(line)
-    return
+    print
 
 def eliminate(values):
     # delete solved values from other peer boxes 
